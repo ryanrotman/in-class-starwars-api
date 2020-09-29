@@ -67,7 +67,7 @@ app.get("/api/characters/:character", function(req, res) {
     }
   }
 
-  return res.json(false);
+  return res.status(404).json(false);
 });
 
 // Create New Characters - takes in JSON input
